@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416825CD1DA4450200E6C4AF /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 416825CC1DA4450200E6C4AF /* click.wav */; };
 		418313881D9D5F9200310269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418313871D9D5F9200310269 /* AppDelegate.swift */; };
 		4183138A1D9D5F9200310269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418313891D9D5F9200310269 /* ViewController.swift */; };
 		4183138D1D9D5F9200310269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4183138B1D9D5F9200310269 /* Main.storyboard */; };
 		4183138F1D9D5F9200310269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4183138E1D9D5F9200310269 /* Assets.xcassets */; };
 		418313921D9D5F9200310269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418313901D9D5F9200310269 /* LaunchScreen.storyboard */; };
+		4183139A1D9D604B00310269 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418313991D9D604B00310269 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		416825CC1DA4450200E6C4AF /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 		418313841D9D5F9200310269 /* bootcamp test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bootcamp test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		418313871D9D5F9200310269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		418313891D9D5F9200310269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		4183138E1D9D5F9200310269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		418313911D9D5F9200310269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		418313931D9D5F9200310269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418313991D9D604B00310269 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				418313871D9D5F9200310269 /* AppDelegate.swift */,
 				418313891D9D5F9200310269 /* ViewController.swift */,
+				418313991D9D604B00310269 /* GameViewController.swift */,
 				4183138B1D9D5F9200310269 /* Main.storyboard */,
 				4183138E1D9D5F9200310269 /* Assets.xcassets */,
 				418313901D9D5F9200310269 /* LaunchScreen.storyboard */,
 				418313931D9D5F9200310269 /* Info.plist */,
+				416825CC1DA4450200E6C4AF /* click.wav */,
 			);
 			path = "bootcamp test";
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 				418313921D9D5F9200310269 /* LaunchScreen.storyboard in Resources */,
 				4183138F1D9D5F9200310269 /* Assets.xcassets in Resources */,
 				4183138D1D9D5F9200310269 /* Main.storyboard in Resources */,
+				416825CD1DA4450200E6C4AF /* click.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4183138A1D9D5F9200310269 /* ViewController.swift in Sources */,
+				4183139A1D9D604B00310269 /* GameViewController.swift in Sources */,
 				418313881D9D5F9200310269 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +308,7 @@
 				418313981D9D5F9200310269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,13 +7,27 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameViewController: UIViewController {
 
+    @IBOutlet var numLabel: UILabel!
+    var counter:Int = 0
+    var player = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let audioPath = Bundle.main.path(forResource: "click", ofType: "wav")
+        
+        do {
+            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+        } catch {
+            // process errors
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +35,10 @@ class GameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonPressed(_ sender: AnyObject) {
+        counter += 1
+        numLabel.text = "\(counter)"
+        player.play()
     }
-    */
 
 }
