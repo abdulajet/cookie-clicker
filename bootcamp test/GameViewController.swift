@@ -37,8 +37,23 @@ class GameViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
         counter += 1
-        numLabel.text = "\(counter)"
+        updateLabel(i: counter)
         player.play()
     }
 
+    @IBAction func reset(_ sender: Any) {
+        
+        counter = 0
+        updateLabel(i: counter)
+    }
+    
+    func updateLabel(i: Int) {
+        
+        
+        numLabel.text = "\(i)"
+        
+    }
+    
+    
+    
 }
